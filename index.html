@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form task.css">
     <title>task</title>
-    <script src="form task.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -55,22 +54,22 @@
         </select><br><br>
         <label for="y">hobbies :</label>
         <label for="y">drawing</label>
-        <input type="checkbox"  id="hobbies" >
+        <input type="checkbox" name="english" value="english" id="hobbies" >
         <label for="y">reading</label>
-        <input type="checkbox"  id="hobbiesor" >
+        <input type="checkbox" name="malayalam" value="malayalam" id="hobbiesor" >
         <label for="y">other</label>
-        <input type="checkbox"  id="hobe" > <br> <br>
+        <input type="checkbox" name="other" value="other" id="hobe" > <br> <br>
         <h1>Address</h1>
         
         <textarea rows="5" cols="35" id="Address"></textarea>
         <br> <br>
         <label for="">Attach Resume :</label>
         <input type="file" name="file" id="Resume" > <br> <br>
-        <button onclick="sendMail()">sumbit</button>
-        <button>reset</button>
+        <input type="submit" onclick="sendMail(event)" >
+        <input type="reset">
         </form>
     </center>
 
-    
+    <script src="form task.js"></script>
 </body>
 </html>
