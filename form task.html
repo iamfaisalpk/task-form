@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form task.css">
+    <title>task</title>
+    <script src="form task.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+    emailjs.init({
+        publicKey: "a00TEMUQjUd-Fve7E",
+    });
+})();
+</script>
+</head>
+<body>
+    <center>
+    <h1>Personel Details</h1>
+    </center>
+    <center>
+        <form action="">
+            <label for="yh">Name :</label>
+            <input type="text" placeholder="Name" id="yh" required><br><br>
+            <label for="w">Password :</label>
+            <input type="password" placeholder="password" id="w" required><br><br>
+            <label for="A">E-mail id :</label>
+            <input type="email" placeholder="email" id="A" required><br><br>
+            <label for="">Gender :</label>
+            <input type="radio" name="Gender" id="gen" required>
+            <label for="">Male</label>
+            <input type="radio" name="Gender" id="gend" required>
+            <label for="">Female</label><br><br>
+            <label for="Y">Contact :</label>
+            <input type="number" name="" id="Y"><br>
+            <h1>Educational Qualification</h1>
+            <label for="">Degree :</label>
+        <select id="select" required>
+            <option>--Select Group--</option>
+            <option>B.com</option>
+            <option>B.sc</option>
+            <option>BBA</option>
+            <option>BCA</option>
+        </select> <br> <br>
+        <label for="">Engineering :</label>
+        <select id="selector" required>
+            <option>--Select Group--</option>
+            <option>CSEE</option>
+            <option>Civivl Engineerig</option>
+            <option>Machanical Engineering</option>
+            <option>Electronics Engineering</option>
+        </select><br><br>
+        <label for="y">hobbies :</label>
+        <label for="y">drawing</label>
+        <input type="checkbox"  id="hobbies" >
+        <label for="y">reading</label>
+        <input type="checkbox"  id="hobbiesor" >
+        <label for="y">other</label>
+        <input type="checkbox"  id="hobe" > <br> <br>
+        <h1>Address</h1>
+        
+        <textarea rows="5" cols="35" id="Address"></textarea>
+        <br> <br>
+        <label for="">Attach Resume :</label>
+        <input type="file" name="file" id="Resume" > <br> <br>
+        <button onclick="sendMail()">sumbit</button>
+        <button>reset</button>
+        </form>
+    </center>
+
+    
+</body>
+</html>
